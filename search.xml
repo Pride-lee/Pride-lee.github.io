@@ -4,26 +4,52 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2022/07/06/hello-world/"/>
-      <url>/2022/07/06/hello-world/</url>
+      <title>苹果手机免越狱微信双开</title>
+      <link href="/iphone-wechat.html"/>
+      <url>/iphone-wechat.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> iPhone </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>苹果手机免越狱微信双开</title>
-      <link href="/2022/06/05/%E7%AD%BE%E5%90%8D/"/>
-      <url>/2022/06/05/%E7%AD%BE%E5%90%8D/</url>
+      <title>好用的远程控制软件</title>
+      <link href="/remote-control.html"/>
+      <url>/remote-control.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><p><strong>如果需要我远程控制你的电脑的话，按照以下教程操作即可</strong></p><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>先下载远程控制软件ToDesk <a href="https://dl.todesk.com/windows/ToDesk_Lite_x64.exe">点我下载</a>或者去<a href="https://www.todesk.com/">官网</a>下载(精简版免安装)</p><p><img src="https://s1.ax1x.com/2022/07/07/jwNpVA.png" alt="推荐精简版" title="精简版免安装"></p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>下载完打开软件，然后截图发给我（如下图）</p><p>注意：如果连接密码是隐藏的话，点击后边的小眼睛图标把密码显示出来</p><p><img src="https://s1.ax1x.com/2022/07/07/jwNk28.png" alt="软件截图" title="把图片发给我"></p><h2 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h2>]]></content>
       
       
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 远程控制 </tag>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
       
     </entry>
     
