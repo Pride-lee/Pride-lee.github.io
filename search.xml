@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>前端面试题--html篇</title>
+      <link href="/FE-html.html"/>
+      <url>/FE-html.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="html5有哪些新特性？"><a href="#html5有哪些新特性？" class="headerlink" title="html5有哪些新特性？"></a>html5有哪些新特性？</h2><p>答：html5新增和移除了一些元素</p><p>新增了以下几大类元素：</p><p>内容元素：article、footer、header、nav、section。<br>表单控件：calendar、date、time、email、url、search。<br>控件元素：webworker, websockt, Geolocation。</p><p>移除的元素有下列这些：</p><p>显现层元素：basefont，big，center，font, s，strike，tt，u。<br>性能较差元素：frame，frameset，noframes。</p><p>HTML5已形成了最终的标准，概括来讲，它主要是关于图像，位置，存储，多任务等功能的增加。<br>新增的元素有绘画 canvas ，用于媒介回放的 video 和 audio 元素，本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失，而sessionStorage的数据在浏览器关闭后自动删除。<br>新的技术：canvas,svg,webworker, websocket, Geolocation</p><h2 id="对HTML语义化的理解"><a href="#对HTML语义化的理解" class="headerlink" title="对HTML语义化的理解"></a>对HTML语义化的理解</h2><p>答：</p><p>（1）HTML语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析；<br>（2）即使在没有样式CSS的情况下也能以一种文档格式显示，并且是容易阅读的；<br>（3）搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，有利于SEO；<br>（4）使阅读源代码的人更容易将网站分块，便于阅读、维护和理解。</p><h2 id="Doctype作用-严格模式混杂模式"><a href="#Doctype作用-严格模式混杂模式" class="headerlink" title="Doctype作用?严格模式混杂模式"></a>Doctype作用?严格模式混杂模式</h2><p>答：</p><p>（1）&lt;!DOCTYPE&gt; 声明位于文档中的最前面，处于 <html> 标签之前。告知浏览器以何种模式来渲染文档。<br>（2）严格模式的排版和 JS 运作模式是以该浏览器支持的最高标准运行。<br>（3）在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。<br>（4）DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。</p><h2 id="浏览器内核的理解"><a href="#浏览器内核的理解" class="headerlink" title="浏览器内核的理解"></a>浏览器内核的理解</h2><p>答：</p><p> 浏览器内核（Rendering Engine），直译过来的意思是渲染引擎，它指浏览器最核心的部分，负责对网页语法的解释（如标准通用标记语言下的一个应用HTML、JavaScript）并渲染（显示）网页。</p><p> 所以，通常所谓的浏览器内核也就是浏览器所采用的渲染引擎，渲染引擎决定了浏览器如何显示网页的内容以及页面的格式信息。不同的浏览器内核对网页编写语法的解释也有不同，因此同一网页在不同的内核的浏览器里的渲染（显示）效果也可能不同，这也是网页编写者需要在不同内核的浏览器中测试网页显示效果的原因。</p><h3 id="常见的内核"><a href="#常见的内核" class="headerlink" title="常见的内核"></a>常见的内核</h3><p>Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]<br>Gecko内核：Netscape6及以上版本，FF,MozillaSuite&#x2F;SeaMonkey等。<br>Presto内核：Opera7及以上。      [Opera内核原为：Presto，现为、Blink;]<br>Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]<br>EdgeHTML内核：Microsoft Edge。  [此内核其实是从MSHTML fork而来，删掉了几乎所有的IE私有特性]。</p><h2 id="对WEB标准以及W3C的理解"><a href="#对WEB标准以及W3C的理解" class="headerlink" title="对WEB标准以及W3C的理解"></a>对WEB标准以及W3C的理解</h2><p>Web标准一般是将结构、表现、行为独立分开，使其更具有模块化。</p><p>W3C标准是对web标准提出规范化要求，比如：标签字母要小写，双标签要闭合，标签不允许随意嵌套。</p><p>好处是：文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面试题 </category>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试题 </tag>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>苹果手机免越狱微信双开</title>
       <link href="/iphone-wechat.html"/>
       <url>/iphone-wechat.html</url>
