@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lhx.zzux.com/null.html</loc>
+    <loc>https://lhx.zzux.com/fe-bfc.html</loc>
     
-    <lastmod>2022-07-21</lastmod>
+    <lastmod>2022-07-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/fe-css.html</loc>
+    
+    <lastmod>2022-07-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -110,6 +119,13 @@
   
   <url>
     <loc>https://lhx.zzux.com/tags/css/</loc>
+    <lastmod>2022-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2022-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
