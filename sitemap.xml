@@ -2,9 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lhx.zzux.com/fe-vuex.html</loc>
+    
+    <lastmod>2022-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/iphone-wechat.html</loc>
+    
+    <lastmod>2022-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/remote-control.html</loc>
+    
+    <lastmod>2022-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lhx.zzux.com/fe-bfc.html</loc>
     
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -23,24 +50,6 @@
     <loc>https://lhx.zzux.com/FE-html.html</loc>
     
     <lastmod>2022-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lhx.zzux.com/iphone-wechat.html</loc>
-    
-    <lastmod>2022-07-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lhx.zzux.com/remote-control.html</loc>
-    
-    <lastmod>2022-07-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +85,7 @@
 
   <url>
     <loc>https://lhx.zzux.com/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,49 +93,56 @@
   
   <url>
     <loc>https://lhx.zzux.com/tags/%E8%BF%9C%E7%A8%8B%E6%8E%A7%E5%88%B6/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/tags/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/tags/iPhone/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/tags/html/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/tags/css/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/tags/vue/</loc>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -135,28 +151,35 @@
   
   <url>
     <loc>https://lhx.zzux.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/css/</loc>
-    <lastmod>2022-07-22</lastmod>
+    <lastmod>2022-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/vue/</loc>
+    <lastmod>2022-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
