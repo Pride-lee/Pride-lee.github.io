@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lhx.zzux.com//post/vuex.html</loc>
+    <lastmod>2022-08-04</lastmod>
+  </url>
+  <url>
+    <loc>https://lhx.zzux.com//post/watcher-release.html</loc>
+    <lastmod>2022-08-03</lastmod>
+  </url>
+  <url>
+    <loc>https://lhx.zzux.com//post/chrome-cache.html</loc>
+    <lastmod>2022-08-03</lastmod>
+  </url>
+  <url>
+    <loc>https://lhx.zzux.com//post/bfc.html</loc>
+    <lastmod>2022-08-03</lastmod>
+  </url>
+  <url>
+    <loc>https://lhx.zzux.com//post/css.html</loc>
+    <lastmod>2022-08-03</lastmod>
+  </url>
+  <url>
     <loc>https://lhx.zzux.com//post/%E7%BB%BC%E5%90%88%E9%9D%A2%E8%AF%95%E9%A2%98.html</loc>
     <lastmod>2022-08-01</lastmod>
   </url>
   <url>
     <loc>https://lhx.zzux.com//post/data-type.html</loc>
-    <lastmod>2022-08-01</lastmod>
-  </url>
-  <url>
-    <loc>https://lhx.zzux.com//post/css.html</loc>
-    <lastmod>2022-08-01</lastmod>
-  </url>
-  <url>
-    <loc>https://lhx.zzux.com//post/bfc.html</loc>
     <lastmod>2022-08-01</lastmod>
   </url>
   <url>
@@ -23,10 +35,6 @@
   <url>
     <loc>https://lhx.zzux.com//post/html.html</loc>
     <lastmod>2022-07-31</lastmod>
-  </url>
-  <url>
-    <loc>https://lhx.zzux.com//post/vuex.html</loc>
-    <lastmod>2022-07-28</lastmod>
   </url>
   <url>
     <loc>https://lhx.zzux.com//post/iPhoneSign.html</loc>
