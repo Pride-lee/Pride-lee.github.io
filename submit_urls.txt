@@ -1,5 +1,5 @@
-https://lhx.zzux.com/post/vuex.html
 https://lhx.zzux.com/post/watcher-release.html
+https://lhx.zzux.com/post/vuex.html
 https://lhx.zzux.com/post/chrome-cache.html
 https://lhx.zzux.com/post/bfc.html
 https://lhx.zzux.com/post/css.html
