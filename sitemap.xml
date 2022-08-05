@@ -2,45 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lhx.zzux.com/vue.html</loc>
+    <loc>https://lhx.zzux.com/fe-this.html</loc>
     
-    <lastmod>2022-08-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lhx.zzux.com/watcher-release.html</loc>
-    
-    <lastmod>2022-08-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lhx.zzux.com/fe-vuex.html</loc>
-    
-    <lastmod>2022-08-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lhx.zzux.com/chrome-cache.html</loc>
-    
-    <lastmod>2022-08-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lhx.zzux.com/fe-bfc.html</loc>
-    
-    <lastmod>2022-08-03</lastmod>
+    <lastmod>2022-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +13,16 @@
   <url>
     <loc>https://lhx.zzux.com/fe-css.html</loc>
     
-    <lastmod>2022-08-03</lastmod>
+    <lastmod>2022-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/fe-float.html</loc>
+    
+    <lastmod>2022-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,16 +31,34 @@
   <url>
     <loc>https://lhx.zzux.com/fe-mianshi.html</loc>
     
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://lhx.zzux.com/data-type.html</loc>
+    <loc>https://lhx.zzux.com/watcher-release.html</loc>
     
-    <lastmod>2022-08-01</lastmod>
+    <lastmod>2022-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/fe-vuex.html</loc>
+    
+    <lastmod>2022-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/vue.html</loc>
+    
+    <lastmod>2022-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +67,16 @@
   <url>
     <loc>https://lhx.zzux.com/remote-control.html</loc>
     
-    <lastmod>2022-07-31</lastmod>
+    <lastmod>2022-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/fe-bfc.html</loc>
+    
+    <lastmod>2022-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +85,25 @@
   <url>
     <loc>https://lhx.zzux.com/FE-html.html</loc>
     
-    <lastmod>2022-07-31</lastmod>
+    <lastmod>2022-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/data-type.html</loc>
+    
+    <lastmod>2022-08-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/chrome-cache.html</loc>
+    
+    <lastmod>2022-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -199,14 +217,14 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <loc>https://lhx.zzux.com/tags/JavaScript/</loc>
     <lastmod>2022-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
+  
+
   
   <url>
     <loc>https://lhx.zzux.com/categories/%E5%89%8D%E7%AB%AF/</loc>
@@ -216,21 +234,7 @@
   </url>
   
   <url>
-    <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/css/</loc>
-    <lastmod>2022-08-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lhx.zzux.com/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2022-08-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2022-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -265,14 +269,42 @@
   </url>
   
   <url>
-    <loc>https://lhx.zzux.com/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/%E5%89%8D%E7%AB%AF/html/</loc>
+    <loc>https://lhx.zzux.com/categories/vue/</loc>
     <lastmod>2022-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://lhx.zzux.com/categories/vue/</loc>
+    <loc>https://lhx.zzux.com/categories/%E5%89%8D%E7%AB%AF/css/</loc>
+    <lastmod>2022-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/categories/%E5%89%8D%E7%AB%AF/html/</loc>
+    <lastmod>2022-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/categories/%E5%89%8D%E7%AB%AF/css/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2022-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/categories/vue/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2022-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lhx.zzux.com/categories/%E5%89%8D%E7%AB%AF/html/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2022-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
