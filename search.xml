@@ -4,35 +4,6 @@
   
     
     <entry>
-      <title>深拷贝和浅拷贝</title>
-      <link href="/fe-copy.html"/>
-      <url>/fe-copy.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h2><p>浅拷贝指的是：对基本类型的值拷贝，以及对象类型的地址拷贝。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span></span><br><span class="line">  <span class="keyword">var</span> b = a</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(a) <span class="comment">//1</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(b) <span class="comment">//1</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="number">2</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(a)</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(b)</span><br></pre></td></tr></table></figure><p>这里a是基本类型，</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-          <category> 面试题 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 前端 </tag>
-            
-            <tag> JavaScript </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>什么是Vuex?</title>
       <link href="/fe-vuex.html"/>
       <url>/fe-vuex.html</url>
@@ -108,6 +79,35 @@
         <tags>
             
             <tag> iPhone </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>深拷贝和浅拷贝</title>
+      <link href="/fe-copy.html"/>
+      <url>/fe-copy.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h2><p>浅拷贝指的是：对基本类型的值拷贝，以及对象类型的地址拷贝。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span></span><br><span class="line">  <span class="keyword">var</span> b = a</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(a) <span class="comment">//1</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(b) <span class="comment">//1</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="number">2</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(a)</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(b)</span><br></pre></td></tr></table></figure><p>这里a是基本类型，</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
       
