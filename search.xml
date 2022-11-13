@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>浏览器的缓存机制</title>
+      <link href="/chrome-cache.html"/>
+      <url>/chrome-cache.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器会将请求后的资源进行存储为离线资源，当下次需要该资源时，浏览器会根据缓存机制决定直接使用缓存资源还是再次向服务器发送请求。</p><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><ul><li>减少了不必要的数据传输，降低服务器压力</li><li>加快了客户端访问速度</li><li>增强用户体验</li></ul><h2 id="概览图"><a href="#概览图" class="headerlink" title="概览图"></a>概览图</h2><p><img src="https://s1.ax1x.com/2022/08/03/vZY1Ts.png" alt="网页缓存机制"></p><h2 id="强缓存"><a href="#强缓存" class="headerlink" title="强缓存"></a>强缓存</h2><blockquote><p>指定一个具体的时间过期，只要日期没到就可以继续用，不向服务端发请求，强制使用缓存。</p><p>强缓存（有效期或终止日期、最后过期时间）。</p></blockquote><p>实现方式</p><blockquote><p>后端在响应头中返回 Expires 和 Cache-Control</p></blockquote><p><code>Expires</code>：</p><blockquote><p>http协议1.0的字段，缓存过期时间，用来指定资源到期的时间，是服务器端的具体的时间点。</p><p>浏览器：使用expires到期时间和本地时间对比，如果本地时间被修改或者和服务器时间差距较大，会造成不准确的问题。</p><p>比如：设定过期时间2023年1月1日00:00:00，但是我们本地时间改了会有问题。</p></blockquote><p><code>Cache-Control</code>:</p><blockquote><p>Cache-Control是http1.1的字段，它约定的时间是相对时间。</p><p>比如：五天后过期，这么一来我们本地时间被修改也不会出问题。</p></blockquote><p>如果两者同时存在，那么Cache-Control比Expires优先级高。</p><blockquote><p>强制缓存时间到了并不一定会重新发送请求，而是会继续走协商缓存。</p></blockquote><h2 id="协商缓存"><a href="#协商缓存" class="headerlink" title="协商缓存"></a>协商缓存</h2><blockquote><p>当强缓存失效后会使用协商缓存；协商缓存是由服务器决定是否使用缓存。</p></blockquote><p>1.向服务器发送请求资源并携带标识</p><ul><li>Etag字段：表示请求资源在服务器的唯一标识，浏览器可以根据Etag值缓存数据，下次请求的时候以if-None-Match字段请求</li><li>Last-Modified字段：用于标记请求资源的最后一次修改时间。</li></ul><p>2.浏览器会判断浏览器缓存的资源是否真的失效，是否需要更新</p><ul><li>如果失效，服务端数据已经更新：</li><li>服务器返回状态码200，重新返回新资源和缓存标识</li><li>浏览器再次存入缓存</li><li>后续再次从强缓存开始</li></ul><p>3.缓存时间到了，资源没更新，服务器就直接返回304，继续使用本地缓存。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试题 </tag>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>什么是Vuex?</title>
       <link href="/fe-vuex.html"/>
       <url>/fe-vuex.html</url>
@@ -35,6 +64,31 @@
     
     
     <entry>
+      <title>苹果手机免越狱微信双开</title>
+      <link href="/iphone-wechat.html"/>
+      <url>/iphone-wechat.html</url>
+      
+        <content type="html"><![CDATA[<p> <strong>苹果免越狱微信双开</strong>（不是广告）</p><blockquote><p>事情的起因是我姐姐因工作需要两个微信，但是众所周知苹果手机官方是没有双开这个功能的，并且由于微信系统封闭，所以很难像安卓手机一样轻松的解决，在网上看了很多教程总结出一个比较好用的。</p></blockquote><mark class="hl-label pink">至于我为什么不用爱思助手</mark> ，爱思助手看起来简单，但是后续比较繁琐，每七天续签的时候还要重新签名，重新安装一次。<p>这个方法只是第一次操作稍微麻烦一点，但是后续只需要电脑和手机在同一网络下就可以了，续签是自动的，不用重新签名，不用重新安装，不用数据线插到电脑上！</p><p> <strong>废话少说直接上教程</strong></p><h2 id="下载最新版本iTunes、iCloud"><a href="#下载最新版本iTunes、iCloud" class="headerlink" title="下载最新版本iTunes、iCloud"></a>下载最新版本iTunes、iCloud</h2><p><a href="https://www.apple.com/itunes/download/win64">点我下载iTunes</a>。</p><p>或者去iTunes官网<a href="https://www.apple.com.cn/itunes/">https://www.apple.com.cn/itunes/</a></p><p><a href="https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe">点我下载iCloud</a>。</p><p>或者去iCloud官网<a href="https://support.apple.com/zh-cn/HT204283">https://support.apple.com/zh-cn/HT204283</a></p><h2 id="下载安装Altstore"><a href="#下载安装Altstore" class="headerlink" title="下载安装Altstore"></a>下载安装Altstore</h2><p>官网地址<a href="https://altstore.io/">https://altstore.io</a></p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p><strong>注意：上面这三个软件安装的时候，<mark class="hl-label orange">最好：右键-用管理员身份运行</mark>  （altstore先解压出来安装），要不然可能会出现问题。</strong></p><h2 id="连接手机"><a href="#连接手机" class="headerlink" title="连接手机"></a>连接手机</h2><p> <strong>安装完之后三个软件都打开（Altstore没有应用界面，电脑右下角有菱形图标就代表已经启动了），然后把手机连上电脑，iTunes上对当前电脑授权</strong><br><img src="https://s1.ax1x.com/2022/07/10/jsMoWT.png" alt="jsMoWT.png"></p><p><strong>手机弹窗点信任</strong><br><img src="https://s1.ax1x.com/2022/07/10/jsM7SU.png" alt="jsM7SU.png"><br> <strong>iTunes连接成功后把这两个同步选项勾选上</strong><br><img src="https://s1.ax1x.com/2022/07/10/jsM5F0.png" alt="jsM5F0.png"></p><h2 id="手机安装Altstore"><a href="#手机安装Altstore" class="headerlink" title="手机安装Altstore"></a>手机安装Altstore</h2><p><strong>在右下角任务栏，右键AltStore选择install AltStore - 你的iphone,上面步骤中如果需要输入id和密码正常操作就可以</strong></p><p><img src="https://s1.ax1x.com/2022/07/10/jsQ29K.png" alt="jsQ29K.png"></p><p>等待一会儿，如果提示installation succeeded就代表安装成功了。这时候你手机上应该成功安装上了altstore，安装完成后，需要在手机系统设置内选择“通用”-“描述文件与设备管理”-进行信任证书。</p><p><img src="https://s1.ax1x.com/2022/07/10/jsQ7Nt.png" alt="jsQ7Nt.png"></p><h2 id="重头戏：微信二号"><a href="#重头戏：微信二号" class="headerlink" title="重头戏：微信二号"></a>重头戏：微信二号</h2><h2 id="下载我修改好的微信"><a href="#下载我修改好的微信" class="headerlink" title="下载我修改好的微信"></a>下载我修改好的微信</h2><p><strong>这一步真的是折腾了好久，之前在网上找的教程要么是没有微信安装包要么是安装包用不了，一直提示the app name is invalid或者 the app is invalid，最后终于修改打包出来了一个能用的</strong></p><p>纯净版：链接: <a href="https://pan.baidu.com/s/1Wt675l1_m7jp8qa-rbH7sA?pwd=lhxd">https://pan.baidu.com/s/1Wt675l1_m7jp8qa-rbH7sA?pwd=lhxd</a> 提取码: lhxd</p><p>多功能版：链接: <a href="https://pan.baidu.com/s/1M3kafr1uiEJJaPNua_51Vw?pwd=lhxd">https://pan.baidu.com/s/1M3kafr1uiEJJaPNua_51Vw?pwd=lhxd</a> 提取码: lhxd </p><p>多功能共存版（上面两个版本会互相覆盖，这个能与上两个共存）：链接: <a href="https://pan.baidu.com/s/1JOEWr6J_CeJ84hL43YBkHQ?pwd=lhxd">https://pan.baidu.com/s/1JOEWr6J_CeJ84hL43YBkHQ?pwd=lhxd</a> 提取码: lhxd </p><h2 id="下载后发送到手机"><a href="#下载后发送到手机" class="headerlink" title="下载后发送到手机"></a>下载后发送到手机</h2><p>这一步最简单的办法是直接在电脑上用微信文件助手传给手机，然后手机接收完成打开方式选择第二个，也就是AleStore<br><img src="https://s1.ax1x.com/2022/07/11/jcJSxI.png" alt="jcJSxI.png"></p><h2 id="手机安装微信2号"><a href="#手机安装微信2号" class="headerlink" title="手机安装微信2号"></a>手机安装微信2号</h2><p><strong>手机端AltStore按步骤操作即可</strong><br>需要输入id和密码就正常输，最后看altStore里面有微信就代表成功了，这时候返回桌面就可以看到第二个微信就可以正常使用了</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>注意：此方法为个人签名，有效期只有七天，马上要过期的时候只要电脑和手机链接同一个wifi即可续签，记得每七天要续签一次</p><h2 id="续签失败解决办法"><a href="#续签失败解决办法" class="headerlink" title="续签失败解决办法"></a>续签失败解决办法</h2><p>22年8月12日更新：在用了一个多月之后，我姐发来一张图过来说出了问题不能续签了</p><p><img src="https://s1.ax1x.com/2022/08/12/vYgAV1.png" alt="报错"></p><p>这个提示说的是会话过期，嗯…等于没说，谁知道是什么玩意过期了，只能一点点排查，最后发现…</p><mark class="hl-label purple">我姐电脑上的iTunes不见了！？</mark> 据她所说她没删，这几天都没碰电脑😂<p>那么知道问题在哪解决起来就简单了，下面是我的操作步骤：</p><ul><li>先安装iTunes</li><li>iTunes打开把之前的操作做一遍，也就是连上手机后把那两个同步的选项给勾选上；</li><li>然后再点击AltStore——Install AltStore一路操作下去，需要输id和密码就输进去；</li><li>等待一会，电脑右下角提示installation succeeded就可以打开手机去点击update续签了；</li><li>这时候应该就能正常续签变成七天了</li><li>问题解决！🎉🎉🎉</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> iPhone </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>好用的远程控制软件</title>
       <link href="/remote-control.html"/>
       <url>/remote-control.html</url>
@@ -54,31 +108,6 @@
             <tag> 远程控制 </tag>
             
             <tag> 软件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>苹果手机免越狱微信双开</title>
-      <link href="/iphone-wechat.html"/>
-      <url>/iphone-wechat.html</url>
-      
-        <content type="html"><![CDATA[<p> <strong>苹果免越狱微信双开</strong></p><blockquote><p>事情的起因是我姐姐因工作需要两个微信，但是众所周知苹果手机官方是没有双开这个功能的，并且由于微信系统封闭，所以很难像安卓手机一样轻松的解决，在网上看了很多教程总结出一个比较好用的。</p></blockquote><mark class="hl-label pink">至于我为什么不用爱思助手</mark> ，爱思助手看起来简单，但是后续比较繁琐，每七天续签的时候还要重新签名，重新安装一次。<p>这个方法只是第一次操作稍微麻烦一点，但是后续只需要电脑和手机在同一网络下就可以了，续签是自动的，不用重新签名，不用重新安装，不用数据线插到电脑上！</p><p> <strong>废话少说直接上教程</strong></p><h2 id="下载最新版本iTunes、iCloud"><a href="#下载最新版本iTunes、iCloud" class="headerlink" title="下载最新版本iTunes、iCloud"></a>下载最新版本iTunes、iCloud</h2><p><a href="https://www.apple.com/itunes/download/win64">点我下载iTunes</a>。</p><p>或者去iTunes官网<a href="https://www.apple.com.cn/itunes/">https://www.apple.com.cn/itunes/</a></p><p><a href="https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe">点我下载iCloud</a>。</p><p>或者去iCloud官网<a href="https://support.apple.com/zh-cn/HT204283">https://support.apple.com/zh-cn/HT204283</a></p><h2 id="下载安装Altstore"><a href="#下载安装Altstore" class="headerlink" title="下载安装Altstore"></a>下载安装Altstore</h2><p>官网地址<a href="https://altstore.io/">https://altstore.io</a></p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p><strong>注意：上面这三个软件安装的时候，<mark class="hl-label orange">最好：右键-用管理员身份运行</mark>  （altstore先解压出来安装），要不然可能会出现问题。</strong></p><h2 id="连接手机"><a href="#连接手机" class="headerlink" title="连接手机"></a>连接手机</h2><p> <strong>安装完之后三个软件都打开（Altstore没有应用界面，电脑右下角有菱形图标就代表已经启动了），然后把手机连上电脑，iTunes上对当前电脑授权</strong><br><img src="https://s1.ax1x.com/2022/07/10/jsMoWT.png" alt="jsMoWT.png"></p><p><strong>手机弹窗点信任</strong><br><img src="https://s1.ax1x.com/2022/07/10/jsM7SU.png" alt="jsM7SU.png"><br> <strong>iTunes连接成功后把这两个同步选项勾选上</strong><br><img src="https://s1.ax1x.com/2022/07/10/jsM5F0.png" alt="jsM5F0.png"></p><h2 id="手机安装Altstore"><a href="#手机安装Altstore" class="headerlink" title="手机安装Altstore"></a>手机安装Altstore</h2><p><strong>在右下角任务栏，右键AltStore选择install AltStore - 你的iphone,上面步骤中如果需要输入id和密码正常操作就可以</strong></p><p><img src="https://s1.ax1x.com/2022/07/10/jsQ29K.png" alt="jsQ29K.png"></p><p>等待一会儿，如果提示installation succeeded就代表安装成功了。这时候你手机上应该成功安装上了altstore，安装完成后，需要在手机系统设置内选择“通用”-“描述文件与设备管理”-进行信任证书。</p><p><img src="https://s1.ax1x.com/2022/07/10/jsQ7Nt.png" alt="jsQ7Nt.png"></p><h2 id="重头戏：微信二号"><a href="#重头戏：微信二号" class="headerlink" title="重头戏：微信二号"></a>重头戏：微信二号</h2><h2 id="下载我修改好的微信"><a href="#下载我修改好的微信" class="headerlink" title="下载我修改好的微信"></a>下载我修改好的微信</h2><p><strong>这一步真的是折腾了好久，之前在网上找的教程要么是没有微信安装包要么是安装包用不了，一直提示the app name is invalid或者 the app is invalid，最后终于修改打包出来了一个能用的</strong></p><p>纯净版：链接: <a href="https://pan.baidu.com/s/1Wt675l1_m7jp8qa-rbH7sA?pwd=lhxd">https://pan.baidu.com/s/1Wt675l1_m7jp8qa-rbH7sA?pwd=lhxd</a> 提取码: lhxd</p><p>多功能版：链接: <a href="https://pan.baidu.com/s/1M3kafr1uiEJJaPNua_51Vw?pwd=lhxd">https://pan.baidu.com/s/1M3kafr1uiEJJaPNua_51Vw?pwd=lhxd</a> 提取码: lhxd </p><p>多功能共存版（上面两个版本会互相覆盖，这个能与上两个共存）：链接: <a href="https://pan.baidu.com/s/1JOEWr6J_CeJ84hL43YBkHQ?pwd=lhxd">https://pan.baidu.com/s/1JOEWr6J_CeJ84hL43YBkHQ?pwd=lhxd</a> 提取码: lhxd </p><h2 id="下载后发送到手机"><a href="#下载后发送到手机" class="headerlink" title="下载后发送到手机"></a>下载后发送到手机</h2><p>这一步最简单的办法是直接在电脑上用微信文件助手传给手机，然后手机接收完成打开方式选择第二个，也就是AleStore<br><img src="https://s1.ax1x.com/2022/07/11/jcJSxI.png" alt="jcJSxI.png"></p><h2 id="手机安装微信2号"><a href="#手机安装微信2号" class="headerlink" title="手机安装微信2号"></a>手机安装微信2号</h2><p><strong>手机端AltStore按步骤操作即可</strong><br>需要输入id和密码就正常输，最后看altStore里面有微信就代表成功了，这时候返回桌面就可以看到第二个微信就可以正常使用了</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>注意：此方法为个人签名，有效期只有七天，马上要过期的时候只要电脑和手机链接同一个wifi即可续签，记得每七天要续签一次</p><h2 id="续签失败解决办法"><a href="#续签失败解决办法" class="headerlink" title="续签失败解决办法"></a>续签失败解决办法</h2><p>22年8月12日更新：在用了一个多月之后，我姐发来一张图过来说出了问题不能续签了</p><p><img src="https://s1.ax1x.com/2022/08/12/vYgAV1.png" alt="报错"></p><p>这个提示说的是会话过期，嗯…等于没说，谁知道是什么玩意过期了，只能一点点排查，最后发现…</p><mark class="hl-label purple">我姐电脑上的iTunes不见了！？</mark> 据她所说她没删，这几天都没碰电脑😂<p>那么知道问题在哪解决起来就简单了，下面是我的操作步骤：</p><ul><li>先安装iTunes</li><li>iTunes打开把之前的操作做一遍，也就是连上手机后把那两个同步的选项给勾选上；</li><li>然后再点击AltStore——Install AltStore一路操作下去，需要输id和密码就输进去；</li><li>等待一会，电脑右下角提示installation succeeded就可以打开手机去点击update续签了；</li><li>这时候应该就能正常续签变成七天了</li><li>问题解决！🎉🎉🎉</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> iPhone </tag>
             
         </tags>
       
@@ -150,35 +179,6 @@
       <url>/watcher-release.html</url>
       
         <content type="html"><![CDATA[<p>或许以前认为订阅发布模式是观察者模式的一种别称，但是发展至今，概念已经有了不少区别。</p><p><img src="https://s1.ax1x.com/2022/07/28/vCgOAJ.png" alt="观察者模式-发布订阅模式"></p><h2 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h2><blockquote><p>在观察者模式中，只有两种主体： 观察者 (<code>watcher</code>)和被观察者(<code>dep</code>)也可以说发布者和订阅者。当对象间存在一对多关系时，则使用观察者模式。</p></blockquote><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>比如，当一个对象被修改时，会自动通知依赖它的对象。观察者模式属于行为型模式。降低了目标与观察者之间的耦合关系，目标与观察者之间建立了一套触发机制。</p><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>它的主要缺点如下。 目标与观察者之间的依赖关系并没有完全解除，而且有可能出现循环引用。 当观察者对象很多时，通知的发布会花费很多时间，影响程序的效率。</p><p>1、如果一个被观察者对象有很多的直接和间接的观察者的话，将所有的观察者都通知到会花费很多时间。 </p><p>2、如果在观察者和观察目标之间有循环依赖的话，观察目标会触发它们之间进行循环调用，可能导致系统崩溃。 </p><p>3、观察者模式没有相应的机制让观察者知道所观察的目标对象是怎么发生变化的，而仅仅只是知道观察目标发生了变化。</p><h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>vue 双向绑定实现原理</p><h2 id="发布订阅模式"><a href="#发布订阅模式" class="headerlink" title="发布订阅模式"></a>发布订阅模式</h2><p>有事件中心、发布者、订阅者三个成员；(事件中心的作用可以隔离发布者和订阅者，去除他们之间的依赖)</p><p>添加订阅、发布消息都是用的事件中心里面的方法，且数据存储和数据更新都是用的事件中心里面的方法；所以真正的观察者和发布者之间没有耦合。</p><p><a href="https://segmentfault.com/a/1190000040205212">https://segmentfault.com/a/1190000040205212</a></p><p><a href="https://segmentfault.com/a/1190000020169229">https://segmentfault.com/a/1190000020169229</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-          <category> 面试题 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 面试题 </tag>
-            
-            <tag> 前端 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>浏览器的缓存机制</title>
-      <link href="/chrome-cache.html"/>
-      <url>/chrome-cache.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器会将请求后的资源进行存储为离线资源，当下次需要该资源时，浏览器会根据缓存机制决定直接使用缓存资源还是再次向服务器发送请求。</p><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><ul><li>减少了不必要的数据传输，降低服务器压力</li><li>加快了客户端访问速度</li><li>增强用户体验</li></ul><h2 id="概览图"><a href="#概览图" class="headerlink" title="概览图"></a>概览图</h2><p><img src="https://s1.ax1x.com/2022/08/03/vZY1Ts.png" alt="网页缓存机制"></p><h2 id="强缓存"><a href="#强缓存" class="headerlink" title="强缓存"></a>强缓存</h2><blockquote><p>指定一个具体的时间过期，只要日期没到就可以继续用，不向服务端发请求，强制使用缓存。</p><p>强缓存（有效期或终止日期、最后过期时间）。</p></blockquote><p>实现方式</p><blockquote><p>后端在响应头中返回 Expires 和 Cache-Control</p></blockquote><p><code>Expires</code>：</p><blockquote><p>http协议1.0的字段，缓存过期时间，用来指定资源到期的时间，是服务器端的具体的时间点。</p><p>浏览器：使用expires到期时间和本地时间对比，如果本地时间被修改或者和服务器时间差距较大，会造成不准确的问题。</p><p>比如：设定过期时间2023年1月1日00:00:00，但是我们本地时间改了会有问题。</p></blockquote><p><code>Cache-Control</code>:</p><blockquote><p>Cache-Control是http1.1的字段，它约定的时间是相对时间。</p><p>比如：五天后过期，这么一来我们本地时间被修改也不会出问题。</p></blockquote><p>如果两者同时存在，那么Cache-Control比Expires优先级高。</p><blockquote><p>强制缓存时间到了并不一定会重新发送请求，而是会继续走协商缓存。</p></blockquote><h2 id="协商缓存"><a href="#协商缓存" class="headerlink" title="协商缓存"></a>协商缓存</h2><blockquote><p>当强缓存失效后会使用协商缓存；协商缓存是由服务器决定是否使用缓存。</p></blockquote><p>1.向服务器发送请求资源并携带标识</p><ul><li>Etag字段：表示请求资源在服务器的唯一标识，浏览器可以根据Etag值缓存数据，下次请求的时候以if-None-Match字段请求</li><li>Last-Modified字段：用于标记请求资源的最后一次修改时间。</li></ul><p>2.浏览器会判断浏览器缓存的资源是否真的失效，是否需要更新</p><ul><li>如果失效，服务端数据已经更新：</li><li>服务器返回状态码200，重新返回新资源和缓存标识</li><li>浏览器再次存入缓存</li><li>后续再次从强缓存开始</li></ul><p>3.缓存时间到了，资源没更新，服务器就直接返回304，继续使用本地缓存。</p>]]></content>
       
       
       <categories>
