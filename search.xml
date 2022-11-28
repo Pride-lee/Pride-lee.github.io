@@ -4,35 +4,6 @@
   
     
     <entry>
-      <title>微信小程序知识点（一）</title>
-      <link href="/mini-program.html"/>
-      <url>/mini-program.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><h3 id="项目的基本组成结构"><a href="#项目的基本组成结构" class="headerlink" title="项目的基本组成结构"></a>项目的基本组成结构</h3><p><img src="https://s1.ax1x.com/2022/11/28/zaDSiR.png" alt="根目录文件"></p><h3 id="小程序页面的组成部分"><a href="#小程序页面的组成部分" class="headerlink" title="小程序页面的组成部分"></a>小程序页面的组成部分</h3><p>小程序官方建议把所有小程序的页面，都存放在&#x3D;&#x3D;pages目录&#x3D;&#x3D;中，以单独的文件夹存在，如图</p><p><img src="https://s1.ax1x.com/2022/11/28/zaDCz6.png" alt="页面文件"></p><h2 id="小程序的配置文件"><a href="#小程序的配置文件" class="headerlink" title="小程序的配置文件"></a>小程序的配置文件</h2><blockquote><p>JSON是一种数据格式，在实际开发中，JSON总是以配置文件的形式出现。小程序项目中也不例外：通过不同的 .Json 配置文件，可以对小程序项目进行不同级别的配置。</p></blockquote><p>小程序项目中有4种配置文件，分别是：</p><ol><li><p>项目根目录中的 app.json 配置文件</p><blockquote><p>app.json是当前小程序的全局配置，包括了小程序的所有页面路径、窗口外观、界面表现、底部tab等。</p><p><img src="https://s1.ax1x.com/2022/11/28/zaDZod.png" alt="app.json"></p></blockquote></li><li><p>项目根目录中的 project.config.json 配置文件</p><blockquote><p>project.config.json用来记录我们对小程序开发工具所做的个性化配置</p><ul><li>setting 中保存了编译相关的配置</li><li>projectname 中保存的是项目名称(不影响小程序的名称)</li><li>appid 中保存的是小程序的账号ID</li></ul></blockquote></li><li><p>项目根目录中的 sitemap.json 配置文件</p><blockquote><p>这是微信开放的小程序内搜索，类似于PC网页的SEO。sitemap.json文件用于配置小程序页面是否允许微信索引。</p><p>默认是所有页面都允许被索引，如果要设置所有页面都不允许索引，把配置文件中 “action” : “allow” 改为 ”disallow“即可。</p></blockquote></li><li><p>每个页面文件夹中的.json配置文件</p><blockquote><p>小程序的每个页面都可以使用.json文件来对本页面的窗口外观进行配置，页面中的配置项会覆盖app.json 的 window 中相同的配置项。</p><p>如下图的例子，我们页面的 json 配置就覆盖了根目录的 app.json 配置</p><p><img src="https://s1.ax1x.com/2022/11/28/zaDQQf.png" alt="页面json"></p></blockquote></li></ol><h2 id="新建小程序页面"><a href="#新建小程序页面" class="headerlink" title="新建小程序页面"></a>新建小程序页面</h2><p>只需要在 app.json –&gt; pages 中新增页面的存放路径，小程序开发者工具可以帮我们自动创建对应的页面文件。如下图：</p><p><img src="https://s1.ax1x.com/2022/11/28/zaDGwQ.png" alt="新建页面"></p><h2 id="修改项目首页"><a href="#修改项目首页" class="headerlink" title="修改项目首页"></a>修改项目首页</h2><p>小程序的首页默认是 app.json –&gt; pages 数组中的第一个，想要修改项目的首页，我们只需要调整路径的先后顺序即可。比如我们想把刚创建的 home 作为项目首页的话就可以把 home 的路径放在第一行即可。</p><p><img src="https://s1.ax1x.com/2022/11/28/zaDJoj.png" alt="修改首页"></p><h2 id="WXML和HTML的区别"><a href="#WXML和HTML的区别" class="headerlink" title="WXML和HTML的区别"></a>WXML和HTML的区别</h2><ul><li>标签名不同</li></ul><blockquote><p>HTML：  div、  span、img、 a</p><p>WXML：view、text、image、navigator</p></blockquote><ul><li>属性节点不同</li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">HTML:  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#&quot;</span>&gt;</span>超链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line">WXML:  <span class="tag">&lt;<span class="name">navigator</span> <span class="attr">url</span>=<span class="string">&quot;/pages/home/home&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">navigator</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li>提供了类似vue中的模板语法</li></ul><blockquote><p>数据绑定</p><p>列表渲染</p><p>条件渲染</p></blockquote><h2 id="WXSS和CSS的区别"><a href="#WXSS和CSS的区别" class="headerlink" title="WXSS和CSS的区别"></a>WXSS和CSS的区别</h2><ul><li>新增了rpx尺寸单位</li></ul><blockquote><p>CSS中需要手动进行像素单位换算，如rem</p><p>WXSS在底层支持新的尺寸单位rpx，在不同大小的屏幕上，小程序会自动进行换算</p></blockquote><ul><li>提供了全局的样式和局部样式</li></ul><blockquote><p>项目根目录中的app.wxss会作用于所有小程序页面</p><p>局部页面的.wxss样式仅对当前页面生效</p></blockquote><ul><li>WXSS仅支持部分CSS选择器</li></ul><blockquote><p>.class和#id</p><p>element</p><p>并集选择器、后代选择器</p><p>::after和::before等伪类选择器</p></blockquote><h2 id="小程序JS逻辑交互"><a href="#小程序JS逻辑交互" class="headerlink" title="小程序JS逻辑交互"></a>小程序JS逻辑交互</h2><ul><li>小程序中.js文件的分类</li></ul><blockquote><p>小程序中的JS文件分为三大类，分别是：</p></blockquote><ol><li>app.js               –&gt;是整个小程序项目的入口文件，通过调用App()函数来启动整个小程序</li><li>页面的.js文件     –&gt;是页面的入口文件，通过调用Page()函数来创建并运行页面</li><li>普通的.js文件     –&gt;是普通的功能模块文件，用来封装公共的函数或者属性供页面使用</li></ol><h2 id="小程序的启动步骤"><a href="#小程序的启动步骤" class="headerlink" title="小程序的启动步骤"></a>小程序的启动步骤</h2><ol><li>把小程序的代码包下载到本地</li><li>解析app.json全局配置文件</li><li>执行app.js小程序入口文件，调用App()创建小程序实例</li><li>渲染小程序首页</li><li>小程序启动完成</li></ol><h2 id="小程序页面渲染过程"><a href="#小程序页面渲染过程" class="headerlink" title="小程序页面渲染过程"></a>小程序页面渲染过程</h2><ol><li>加载解析页面的.json配置文件</li><li>加载页面的.wxml模板和.wxss样式</li><li>执行页面的.js文件，调用Page()创建页面实例</li><li>页面渲染完成</li></ol><h2 id="小程序组件"><a href="#小程序组件" class="headerlink" title="小程序组件"></a>小程序组件</h2><p>小程序中的组件也是由宿主环境提供的，主要分为九大类</p><ol><li><p>视图容器</p><details><summary>展开/收起</summary>    <p>        view------------------------------->普通视图区域,类似div，是一个块级元素    </p>    <p>        scroll-view------------------------>可滚动的视图区域，常用来实现滚动列表    </p>    <p>        swiper和swiper-item---------------->轮播图容器组件 和 轮播图item组件    </p></details></li><li><p>基础内容</p><details><summary>展开/收起</summary>    <h4>text</h4>    <p>      文本组件，类似html中的span，行内元素，加selectable属性支持长按选中操作    </p>    <h4>rich-text</h4>    <p>        富文本组件，通过nodes属性节点支持把HTML字符串渲染成WXML结构    </p>    <h4>button</h4>    <p>        按钮，功能比HTML的button丰富，通过open-type属性可以调用微信提供的各种功能（客服、转发、获取用户授权、获取用户信息等）    </p>    <h4>image</h4>    <p>       图片组件，image组件默认宽度约300px，高度约240px    </p>    <img src="https://s1.ax1x.com/2022/11/28/za0whq.png">    <h4>navigator</h4>    <p>      页面导航组件，类似于HTML中的a链接    </p></details></li><li><p>表单组件</p></li><li><p>导航组件</p></li><li><p>媒体组件</p></li><li><p>map地图组件</p></li><li><p>canvas画布组件</p></li><li><p>开放能力</p></li><li><p>无障碍访问</p></li></ol><h2 id="小程序API"><a href="#小程序API" class="headerlink" title="小程序API"></a>小程序API</h2><p>小程序官方把API分为了如下三大类</p><ol><li>事件监听API<ul><li>特点：以 on 开头，用来监听某些事件的触发</li><li>比如：wx.onWindowResize(function callback)监听窗口尺寸变化事件（wx相当于浏览器里的window）</li></ul></li><li>同步API<ul><li>特点1：以Sync结尾的API都是同步API</li><li>特点2：同步API的执行结果，可以通过函数返回值直接获取，如果执行出错会抛出异常</li><li>比如：wx.setStorageSync(‘key’,’value’)向本地存储中写入内容</li></ul></li><li>异步API<ul><li>特点：类似于jQuery 中的 $.ajax(options)函数，需要通过success、fail、complete接收调用的结果</li><li>比如：wx.request()发起网络请求，通过success回调函数接收数据</li></ul></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-          <category> 面试题 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 前端 </tag>
-            
-            <tag> 小程序 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>浏览器的缓存机制</title>
       <link href="/chrome-cache.html"/>
       <url>/chrome-cache.html</url>
